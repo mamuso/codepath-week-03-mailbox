@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		BB57B2221BBB7A3100BAFC13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB57B2211BBB7A3100BAFC13 /* AppDelegate.swift */; };
-		BB57B2241BBB7A3100BAFC13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB57B2231BBB7A3100BAFC13 /* ViewController.swift */; };
 		BB57B2271BBB7A3100BAFC13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB57B2251BBB7A3100BAFC13 /* Main.storyboard */; };
 		BB57B2291BBB7A3100BAFC13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB57B2281BBB7A3100BAFC13 /* Assets.xcassets */; };
 		BB57B22C1BBB7A3100BAFC13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB57B22A1BBB7A3100BAFC13 /* LaunchScreen.storyboard */; };
 		BB57B2371BBB7A3100BAFC13 /* codepath_week_03_mailboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB57B2361BBB7A3100BAFC13 /* codepath_week_03_mailboxTests.swift */; };
 		BB57B2421BBB7A3100BAFC13 /* codepath_week_03_mailboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB57B2411BBB7A3100BAFC13 /* codepath_week_03_mailboxUITests.swift */; };
+		BB57B28A1BBB894700BAFC13 /* MailboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB57B2891BBB894700BAFC13 /* MailboxViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		BB57B21E1BBB7A3100BAFC13 /* codepath-week-03-mailbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "codepath-week-03-mailbox.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB57B2211BBB7A3100BAFC13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BB57B2231BBB7A3100BAFC13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BB57B2261BBB7A3100BAFC13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB57B2281BBB7A3100BAFC13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB57B22B1BBB7A3100BAFC13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		BB57B23D1BBB7A3100BAFC13 /* codepath-week-03-mailboxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "codepath-week-03-mailboxUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB57B2411BBB7A3100BAFC13 /* codepath_week_03_mailboxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = codepath_week_03_mailboxUITests.swift; sourceTree = "<group>"; };
 		BB57B2431BBB7A3100BAFC13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB57B2891BBB894700BAFC13 /* MailboxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailboxViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				BB57B2211BBB7A3100BAFC13 /* AppDelegate.swift */,
-				BB57B2231BBB7A3100BAFC13 /* ViewController.swift */,
 				BB57B2251BBB7A3100BAFC13 /* Main.storyboard */,
+				BB57B2891BBB894700BAFC13 /* MailboxViewController.swift */,
 				BB57B2281BBB7A3100BAFC13 /* Assets.xcassets */,
 				BB57B22A1BBB7A3100BAFC13 /* LaunchScreen.storyboard */,
 				BB57B22D1BBB7A3100BAFC13 /* Info.plist */,
@@ -258,8 +258,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB57B2241BBB7A3100BAFC13 /* ViewController.swift in Sources */,
 				BB57B2221BBB7A3100BAFC13 /* AppDelegate.swift in Sources */,
+				BB57B28A1BBB894700BAFC13 /* MailboxViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +403,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mamuso.codepath-week-03-mailbox";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -414,6 +415,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mamuso.codepath-week-03-mailbox";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
