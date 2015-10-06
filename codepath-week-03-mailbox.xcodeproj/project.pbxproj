@@ -15,6 +15,7 @@
 		BB57B2421BBB7A3100BAFC13 /* codepath_week_03_mailboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB57B2411BBB7A3100BAFC13 /* codepath_week_03_mailboxUITests.swift */; };
 		BBF8EDF01BC3548100F40259 /* MailboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF8EDEF1BC3548100F40259 /* MailboxViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		BBF8EDF21BC37CC000F40259 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF8EDF11BC37CC000F40259 /* Common.swift */; settings = {ASSET_TAGS = (); }; };
+		BBF8EDF41BC3A18F00F40259 /* ComposerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF8EDF31BC3A18F00F40259 /* ComposerViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		BB57B2431BBB7A3100BAFC13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBF8EDEF1BC3548100F40259 /* MailboxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailboxViewController.swift; sourceTree = "<group>"; };
 		BBF8EDF11BC37CC000F40259 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		BBF8EDF31BC3A18F00F40259 /* ComposerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				BB57B2211BBB7A3100BAFC13 /* AppDelegate.swift */,
 				BBF8EDEF1BC3548100F40259 /* MailboxViewController.swift */,
 				BB57B2251BBB7A3100BAFC13 /* Main.storyboard */,
+				BBF8EDF31BC3A18F00F40259 /* ComposerViewController.swift */,
 				BBF8EDF11BC37CC000F40259 /* Common.swift */,
 				BB57B2281BBB7A3100BAFC13 /* Assets.xcassets */,
 				BB57B22A1BBB7A3100BAFC13 /* LaunchScreen.storyboard */,
@@ -263,6 +266,7 @@
 			files = (
 				BB57B2221BBB7A3100BAFC13 /* AppDelegate.swift in Sources */,
 				BBF8EDF21BC37CC000F40259 /* Common.swift in Sources */,
+				BBF8EDF41BC3A18F00F40259 /* ComposerViewController.swift in Sources */,
 				BBF8EDF01BC3548100F40259 /* MailboxViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

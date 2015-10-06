@@ -228,6 +228,12 @@ class MailboxViewController: UIViewController {
         moveGlobal(160)
     }
     
+    @IBAction func onTapComposer(sender: AnyObject) {
+        let vc = self.storyboard!.instantiateViewControllerWithIdentifier("ComposerViewController")
+        vc.modalPresentationStyle = UIModalPresentationStyle.OverCurrentContext
+
+        presentViewController(vc, animated: true, completion: nil)
+    }
     
     /*
     // MARK: - Navigation
