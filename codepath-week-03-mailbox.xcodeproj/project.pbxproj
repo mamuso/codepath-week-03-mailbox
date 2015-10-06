@@ -13,7 +13,8 @@
 		BB57B22C1BBB7A3100BAFC13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB57B22A1BBB7A3100BAFC13 /* LaunchScreen.storyboard */; };
 		BB57B2371BBB7A3100BAFC13 /* codepath_week_03_mailboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB57B2361BBB7A3100BAFC13 /* codepath_week_03_mailboxTests.swift */; };
 		BB57B2421BBB7A3100BAFC13 /* codepath_week_03_mailboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB57B2411BBB7A3100BAFC13 /* codepath_week_03_mailboxUITests.swift */; };
-		BB57B28A1BBB894700BAFC13 /* MailboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB57B2891BBB894700BAFC13 /* MailboxViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		BBF8EDF01BC3548100F40259 /* MailboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF8EDEF1BC3548100F40259 /* MailboxViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		BBF8EDF21BC37CC000F40259 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF8EDF11BC37CC000F40259 /* Common.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +47,8 @@
 		BB57B23D1BBB7A3100BAFC13 /* codepath-week-03-mailboxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "codepath-week-03-mailboxUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB57B2411BBB7A3100BAFC13 /* codepath_week_03_mailboxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = codepath_week_03_mailboxUITests.swift; sourceTree = "<group>"; };
 		BB57B2431BBB7A3100BAFC13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BB57B2891BBB894700BAFC13 /* MailboxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailboxViewController.swift; sourceTree = "<group>"; };
+		BBF8EDEF1BC3548100F40259 /* MailboxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailboxViewController.swift; sourceTree = "<group>"; };
+		BBF8EDF11BC37CC000F40259 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				BB57B2211BBB7A3100BAFC13 /* AppDelegate.swift */,
+				BBF8EDEF1BC3548100F40259 /* MailboxViewController.swift */,
 				BB57B2251BBB7A3100BAFC13 /* Main.storyboard */,
-				BB57B2891BBB894700BAFC13 /* MailboxViewController.swift */,
+				BBF8EDF11BC37CC000F40259 /* Common.swift */,
 				BB57B2281BBB7A3100BAFC13 /* Assets.xcassets */,
 				BB57B22A1BBB7A3100BAFC13 /* LaunchScreen.storyboard */,
 				BB57B22D1BBB7A3100BAFC13 /* Info.plist */,
@@ -259,7 +262,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB57B2221BBB7A3100BAFC13 /* AppDelegate.swift in Sources */,
-				BB57B28A1BBB894700BAFC13 /* MailboxViewController.swift in Sources */,
+				BBF8EDF21BC37CC000F40259 /* Common.swift in Sources */,
+				BBF8EDF01BC3548100F40259 /* MailboxViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +490,7 @@
 				BB57B2481BBB7A3100BAFC13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB57B2491BBB7A3100BAFC13 /* Build configuration list for PBXNativeTarget "codepath-week-03-mailboxTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +499,7 @@
 				BB57B24B1BBB7A3100BAFC13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB57B24C1BBB7A3100BAFC13 /* Build configuration list for PBXNativeTarget "codepath-week-03-mailboxUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +508,7 @@
 				BB57B24E1BBB7A3100BAFC13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
