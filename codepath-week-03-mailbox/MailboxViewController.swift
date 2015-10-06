@@ -10,6 +10,7 @@ import UIKit
 
 class MailboxViewController: UIViewController {
     
+    @IBOutlet weak var globalView: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var feedImageView: UIImageView!
     @IBOutlet weak var rowView: UIView!
@@ -41,6 +42,11 @@ class MailboxViewController: UIViewController {
         feedViewOriginalCenter = feedImageView.center
         rowViewMessageOriginalCenter = rowMessageImageView.center
         translateRowIconsX = rowMessageImageView.frame.width/2 + leftIconRowView.frame.width/2
+        
+        // Adding edge gesture recognizer programatically
+        let edgeGesture = UIScreenEdgePanGestureRecognizer(target: self, action: "onEdgePanScreen:")
+        edgeGesture.edges = UIRectEdge.Left
+        globalView.addGestureRecognizer(edgeGesture)
         
     }
     
@@ -117,7 +123,6 @@ class MailboxViewController: UIViewController {
             leftIconImageView.image = UIImage(named: "archive_icon" )
         }
         
-        
         // Updating the position of the row and the icons
         rowMessageImageView.center = CGPoint(x: translateX, y:rowViewMessageOriginalCenter.y)
         leftIconRowView.center = CGPoint(x: (translation.x > 60 ? translateX - translateRowIconsX : leftIconRowView.frame.width / 2), y:rowViewMessageOriginalCenter.y)
@@ -139,7 +144,6 @@ class MailboxViewController: UIViewController {
             self.rowMessageImageView.center = position
             self.leftIconRowView.center = CGPoint(x: position.x - self.translateRowIconsX, y:position.y)
             self.rightIconRowView.center = CGPoint(x: position.x + self.translateRowIconsX, y:position.y)
-            
         }
     }
     
@@ -196,6 +200,34 @@ class MailboxViewController: UIViewController {
             self.openRow()
         }
     }
+    
+    @IBAction func onEdgePanScreen(sender: UIScreenEdgePanGestureRecognizer) {
+
+        let translation = sender.translationInView(view)
+        let velocity = sender.velocityInView(view)
+        let translateX = 160 + translation.x
+
+        if sender.state == UIGestureRecognizerState.Began {
+        } else if sender.state == UIGestureRecognizerState.Changed {
+            if translation.x > 0 && translation.x < 280 {
+                globalView.center.x = translateX
+            }
+        } else if sender.state == UIGestureRecognizerState.Ended {
+            let positionX = CGFloat(velocity.x > 0 ? 280+160 : 160)
+            moveGlobal(positionX)
+        }
+    }
+    
+    func moveGlobal(positionX: CGFloat) {
+        UIView.animateWithDuration(0.3) { () -> Void in
+            self.globalView.center.x = positionX
+        }
+    }
+
+    @IBAction func onTapHamburgerMenu(sender: AnyObject) {
+        moveGlobal(160)
+    }
+    
     
     /*
     // MARK: - Navigation
