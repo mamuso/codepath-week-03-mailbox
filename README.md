@@ -27,5 +27,5 @@
     - [x] Optional: If the menu is being hidden when the user lifts their finger, it should continue hiding.
 - [x] Optional: Tapping on compose should animate to reveal the compose view.
 - [ ] Optional: Tapping the segmented control in the title should swipe views in from the left or right.
-- [ ] Optional: Shake to undo.
+- [x] Optional: Shake to undo.
 
