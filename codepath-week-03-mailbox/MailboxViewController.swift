@@ -82,9 +82,6 @@ class MailboxViewController: UIViewController {
             case let x where x >= 60:
                 animateRow(CGPoint(x: rowViewMessageOriginalCenter.x + rowMessageImageView.frame.width, y: rowViewMessageOriginalCenter.y))
                 closeRow()
-                delay(2.5, closure: { () -> () in
-                    self.openRow()
-                })
             default:
                 animateRow(rowViewMessageOriginalCenter)
                 animateRowBackground(colorGrey)
@@ -234,6 +231,17 @@ class MailboxViewController: UIViewController {
 
         presentViewController(vc, animated: true, completion: nil)
     }
+    
+    
+    // Shake Gesture
+    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
+        if motion == .MotionShake {
+            openRow()
+        }
+    }
+
+    
+    
     
     /*
     // MARK: - Navigation
