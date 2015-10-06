@@ -2,6 +2,8 @@
 
 *Due:* Monday, October 5th at 11:59pm
 
+![Video Walkthrough](MailboxSimulation.gif)
+
 
 ## Project Requirements
 
